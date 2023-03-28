@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+}
+.gameboard {
+  aspect-ratio: 1/1;
+  width: 75%;
+  min-width: 200px;
+  max-width: 600px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+}
+
+.square button {
+  font-size: 100px;
+  height: 90%;
+  width: 90%;
+  background-color: #fff;
+  border: none;
+}
