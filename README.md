@@ -18,6 +18,8 @@ Build the logic that checks for when the game is over! Should check for 3-in-a-r
 
 Clean up the interface to allow players to put in their names, include a button to start/restart the game and add a display element that congratulates the winning player!
 
+Create a 2 player game and 1 player vs computer
+
 Optional - If you’re feeling ambitious create an AI so that a player can play against the computer!
 
 Start by just getting the computer to make a random legal move.

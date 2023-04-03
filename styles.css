@@ -3,9 +3,8 @@ body {
 }
 .gameboard {
   aspect-ratio: 1/1;
-  width: 75%;
   min-width: 200px;
-  max-width: 600px;
+  max-width: 500px;
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   margin-right: auto;
@@ -18,12 +17,63 @@ body {
   justify-content: center;
   aspect-ratio: 1/1;
   border: 1px solid black;
+  font-size: 100px;
+  cursor: pointer;
 }
 
-.square button {
-  font-size: 100px;
-  height: 90%;
-  width: 90%;
-  background-color: #fff;
-  border: none;
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.start-screen {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.start-screen.show {
+  display: flex;
+}
+
+input {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+input::placeholder {
+  color: rgb(206, 206, 206);
+  font-style: italic;
+}
+
+.winning-screen {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.winning-screen.show {
+  display: flex;
+}
+
+.winning-message {
+  font-size: 3rem;
+  color: white;
+}
+
+button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: black;
+  color: white;
 }
